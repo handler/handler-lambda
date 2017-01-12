@@ -1,0 +1,48 @@
+{
+  "name": "handler-lambda",
+  "description": "AWS Lambda handler",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Pilwon Huh",
+    "email": "pilwon@gmail.com"
+  },
+  "homepage": "https://github.com/handlerjs/handler-lambda",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/handlerjs/handler-lambda.git"
+  },
+  "keywords": [
+    "handler",
+    "server",
+    "aws",
+    "amazon",
+    "lambda",
+    "google",
+    "cloud",
+    "azure",
+    "function",
+    "serverless",
+    "typescript",
+    "ts",
+    "library"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^6.0.59",
+    "ts-loader": "^1.2.2",
+    "tslint": "^4.3.1",
+    "tslint-pilwon": "^0.1.6",
+    "typescript": "^2.1.1",
+    "webpack": "^2.2.0-rc.3",
+    "webpack-node-externals": "^1.5.4"
+  },
+  "peerDependencies": {
+    "handlr": "*"
+  },
+  "scripts": {
+    "prepublish": "npm prune"
+  }
+}
