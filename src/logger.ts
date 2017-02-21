@@ -1,8 +1,9 @@
-import { env } from './env';
+import { DEBUG } from 'handler.js';
 
 export function debug(value: any, title?: string) {
-  if (!env.debug) { return; }
-  log(value, title);
+  if (DEBUG) {
+    log(value, title);
+  }
 }
 
 export function log(value: any, title?: string) {

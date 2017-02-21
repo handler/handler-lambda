@@ -1,16 +1,16 @@
 {
   "name": "handler-lambda",
-  "description": "AWS Lambda handler",
-  "version": "0.0.0",
+  "description": "Handler.js for AWS Lambda",
+  "version": "0.1.0",
   "license": "MIT",
   "author": {
     "name": "Pilwon Huh",
     "email": "pilwon@gmail.com"
   },
-  "homepage": "https://github.com/handlerjs/handler-lambda",
+  "homepage": "https://github.com/handler/handler-lambda",
   "repository": {
     "type": "git",
-    "url": "git://github.com/handlerjs/handler-lambda.git"
+    "url": "git://github.com/handler/handler-lambda.git"
   },
   "keywords": [
     "handler",
@@ -29,20 +29,19 @@
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "dependencies": {},
+  "dependencies": {
+    "@types/node": "^7.0.0",
+    "handler.js": "^0.1.0"
+  },
   "devDependencies": {
-    "@types/node": "^6.0.59",
-    "ts-loader": "^1.2.2",
     "tslint": "^4.3.1",
     "tslint-pilwon": "^0.1.6",
-    "typescript": "^2.1.1",
-    "webpack": "^2.2.0-rc.3",
-    "webpack-node-externals": "^1.5.4"
+    "typescript": "2.1.6"
   },
   "peerDependencies": {
-    "handlr": "*"
+    "handler.js": "0.1.x"
   },
   "scripts": {
-    "prepublish": "npm prune"
+    "build": "tsc"
   }
 }

@@ -11,13 +11,9 @@ export interface ProxyEvent {
   path: string;
   httpMethod: string;
   headers: any;
-  queryStringParameters: {
-    name: string;
-  };
+  queryStringParameters: any;
   pathParameters: any;
-  stageVariables: {
-    stageVariableName: string;
-  };
+  stageVariables: any;
   requestContext: {
     accountId: string;
     resourceId: string;
