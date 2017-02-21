@@ -1,7 +1,7 @@
 {
   "name": "handler-lambda",
   "description": "Handler.js for AWS Lambda",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "author": {
     "name": "Pilwon Huh",
@@ -30,8 +30,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@types/node": "^7.0.0",
-    "handler.js": "^0.1.0"
+    "@types/node": "^7.0.0"
   },
   "devDependencies": {
     "tslint": "^4.3.1",
