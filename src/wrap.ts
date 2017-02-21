@@ -35,7 +35,7 @@ function _toProxyResult(res: HTTPResponse) {
 }
 
 export function fromFunctionHandler(handler: FunctionHandler): Handler {
-  return async(event: Event, context: Context, callback: Callback) => {
+  return async (event: Event, context: Context, callback: Callback) => {
     try {
       logger.log(event, 'Event');
       const req = new FunctionRequest({
@@ -52,7 +52,7 @@ export function fromFunctionHandler(handler: FunctionHandler): Handler {
 }
 
 export function fromFunctionRouter(router: FunctionRouter): Handler {
-  return async(event: RouterEvent, context: Context, callback: Callback) => {
+  return async (event: RouterEvent, context: Context, callback: Callback) => {
     try {
       logger.log(event, 'Event');
       const req = new FunctionRequest({
@@ -86,7 +86,7 @@ export function fromHTTPHandler(handler: HTTPHandler): Handler {
 }
 
 export function fromHTTPRouter(router: HTTPRouter): Handler {
-  return async(event: ProxyEvent, context: Context, callback: Callback) => {
+  return async (event: ProxyEvent, context: Context, callback: Callback) => {
     try {
       logger.log(event, 'Event');
       const rewritePath = router._rewritePath(event.path);
